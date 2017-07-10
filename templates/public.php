@@ -27,7 +27,7 @@
 			<div class="card-deck">
 			    <?php
 			    	foreach ($products as $product) {
-						echo '<div class="card"><img height="235" width="200" class="card-img-top" src="'.$product['image'].'" alt="Card image cap"><div class="card-block"><h4 class="card-title">'.$product['brand']." ".$product['name']." ".$product['weight'].'</h4><p class="card-text">'.$product['description'].'</p></div><div class="card-footer"><small class="text-muted">'.$product['price'].' Eur.'.'</small></div></div>';
+						echo '<div class="card"><img height="235" width="200" class="card-img-top" src="product_images/'.$product['image'].'" alt="Card image cap"><div class="card-block"><h4 class="card-title">'.$product['brand']." ".$product['name']." ".$product['weight'].'</h4><p class="card-text">'.$product['description'].'</p></div><div class="card-footer"><small class="text-muted">'.$product['price'].' Eur.'.'</small></div></div>';
 						}
 			    ?>
 			   </div>
