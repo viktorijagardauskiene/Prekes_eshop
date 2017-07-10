@@ -4,8 +4,8 @@
 
 $db_host = "localhost";
 $db_user = "ViktorijaG";
-$db_pass = "GardauskieneV";
-$db = "prekes";
+$db_pass = "kashtankai15";
+$db = "ViktorijaG";
 
 
 // kadangi šie duomenys nesikeičia, galima deklaruoti ir kaip konstantas pvz:

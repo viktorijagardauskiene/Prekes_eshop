@@ -35,9 +35,13 @@ function add_product($conn) {
     )"; 
 
     // ivykdome užklausą
-	mysqli_query($conn, $sql);
+	if (mysqli_query($conn, $sql)) {
+			alert(true, "Product added.");
+	} else {
+		alert(false, "Product not added.");
+	}
 
-}
+	}
 
 
 function get_products($conn) {
@@ -64,4 +68,19 @@ function get_products($conn) {
 
     // gražinam rezultatus
     return $products;
+}
+
+function delete_product($conn, $id) {
+	
+    // suformuojama užklausa preke istrinti
+    $sql = "DELETE FROM products WHERE id = ".$id;
+    
+
+    // ivykdome užklausą
+	if (mysqli_query($conn, $sql)) {
+			alert(true, "Product deleted.");
+	} else {
+		alert(false, "Product not deleted.");
+	}
+
 }

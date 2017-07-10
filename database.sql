@@ -1,22 +1,8 @@
--- --------------------------------------------------------
--- Host:                         127.0.0.1
--- Server version:               5.7.14 - MySQL Community Server (GPL)
--- Server OS:                    Win64
--- HeidiSQL Version:             9.4.0.5173
--- --------------------------------------------------------
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET NAMES utf8 */;
-/*!50503 SET NAMES utf8mb4 */;
-/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
-/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+﻿
+CREATE DATABASE IF NOT EXISTS `viktorijag` /*!40100 DEFAULT CHARACTER SET utf8 COLLATE utf8_bin */;
+USE `viktorijag`;
 
 
--- Dumping database structure for ignasg
-CREATE DATABASE IF NOT EXISTS `ignasg` /*!40100 DEFAULT CHARACTER SET utf8 COLLATE utf8_bin */;
-USE `ignasg`;
-
--- Dumping structure for table ignasg.products
 CREATE TABLE IF NOT EXISTS `products` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
@@ -28,7 +14,6 @@ CREATE TABLE IF NOT EXISTS `products` (
   UNIQUE KEY `id` (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=20 DEFAULT CHARSET=latin1 COMMENT='CA Products';
 
--- Dumping data for table ignasg.products: 5 rows
 DELETE FROM `products`;
 /*!40000 ALTER TABLE `products` DISABLE KEYS */;
 INSERT INTO `products` (`id`, `name`, `brand`, `description`, `price`, `weight`, `image`) VALUES
