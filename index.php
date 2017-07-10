@@ -49,4 +49,4 @@ if (isset($_SESSION['is_admin']) && $_SESSION['is_admin'] == true) {
 //include 'templates/public.php';
 
 
-// ND padaryti prekiu grupes 
+// ND padaryti prekiu grupes, i forma itraukti drop down meniu  i kuri itraukiamos opcijos kurios yra duombazej, sukurti atskira duombaze groups su atskirais grupiu ID
