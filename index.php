@@ -47,3 +47,6 @@ if (isset($_SESSION['is_admin']) && $_SESSION['is_admin'] == true) {
 
 // Iškviečiam template (šabloną), kuriame atvaizduosim rezultatus
 //include 'templates/public.php';
+
+
+// ND padaryti prekiu grupes 
