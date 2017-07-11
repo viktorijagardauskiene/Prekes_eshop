@@ -25,6 +25,7 @@
 			  <thead>
 			    <tr>
 			      <th>#</th>
+			      <th>Group</th>
 			      <th>Product</th>
 			      <th>Brand</th>
 			      <th>Description</th>
@@ -39,6 +40,7 @@
 			    <?php
 			    	foreach ($products as $product) {
 						echo '<th>'.$product['id'].'</th>
+						<td>'.$product['group'].'</td>
 						<td>'.$product['name'].'</td>
 						<td>'.$product['brand'].'</td>
 						<td>'.$product['description'].'</td>
@@ -60,11 +62,27 @@
 				<div class="col-sm-12">
 					<form action="" method="POST" enctype="multipart/form-data">
 						<div class="row">
-							<div class="form-group col-6">
+							<div class="form-group col-2">
+							<div class="dropdown">
+								  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								    Product group
+								  </button>
+								  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+								    <a class="dropdown-item" href="#">Action</a>
+								    <a class="dropdown-item" href="#">Another action</a>
+								    <a class="dropdown-item" href="#">Something else here</a>
+								  </div>
+								</div>
+							</div>
+							<div class="form-group col-2">
+								<label for="product-name" class="col-form-label">Product group</label>
+								<input class="form-control" type="text" id="product-group" name="group">
+							</div>
+							<div class="form-group col-4">
 								<label for="product-name" class="col-form-label">Product name</label>
 								<input class="form-control" type="text" id="product-name" name="name">
 							</div>
-							<div class="form-group col-6">
+							<div class="form-group col-4">
 								<label for="brand" class="col-form-label">Brand</label>
 								<input class="form-control" type="text" id="brand"  name="brand">
 							</div>

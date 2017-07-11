@@ -25,7 +25,8 @@ function add_product($conn) {
     }
 
     // suformuojama užklausa naujai preke įrašyti
-    $sql = "INSERT INTO products (name, brand, description, price, weight, image) VALUES (
+    $sql = "INSERT INTO products (group, name, brand, description, price, weight, image) VALUES (
+    '".$_POST['group']."', 
     '".$_POST['name']."', 
     '".$_POST['brand']."', 
     '".$_POST['description']."',
@@ -83,4 +84,60 @@ function delete_product($conn, $id) {
 		alert(false, "Product not deleted.");
 	}
 
+/* function add_group($conn) {
+    // suformuojama užklausa naujai grupei įrašyti
+    $sql = "INSERT INTO products_group (group) VALUES (
+    '".$_POST['group']."'
+    )"; 
+
+    // ivykdome užklausą
+    if (mysqli_query($conn, $sql)) {
+            alert(true, "Group added.");
+    } else {
+        alert(false, "Group not added.");
+    }
+
+    }
+
+
+function get_group($conn) {
+
+    // suformuojam užklausą visiems įrašams gauti
+    $sql = "SELECT * FROM products_group";
+
+    // įvykdom užklausą
+    $result_g = mysqli_query($conn, $sql);
+
+    // susikuriame prekių array, kuriame laikysime prekes
+    $products_group = [];
+
+    // jei mysql atsakyme eilučių yra daugiau nei viena...
+    if (mysqli_num_rows($result_g) > 0) {
+        // kol yra eilučių su duomenimis...
+        while($row_g = mysqli_fetch_assoc($result_g)) {
+            // tas eilutes surašome į masyvą.
+            array_push($products_group, $row_g);
+        }
+    } else {
+        alert(FALSE, "0 results found");
+    }
+
+    // gražinam rezultatus
+    return $products_group;
+}
+
+function delete_group($conn, $id) {
+    
+    // suformuojama užklausa preke istrinti
+    $sql = "DELETE FROM products_group WHERE id = ".$id;
+    
+
+    // ivykdome užklausą
+    if (mysqli_query($conn, $sql)) {
+            alert(true, "Group deleted.");
+    } else {
+        alert(false, "Group not deleted.");
+    }
+}
+*/
 }

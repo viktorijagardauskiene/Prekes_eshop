@@ -4,7 +4,7 @@
 
 $db_host = "localhost";
 $db_user = "ViktorijaG";
-$db_pass = "kashtankai15";
+$db_pass = "GardauskieneV";
 $db = "ViktorijaG";
 
 

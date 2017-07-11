@@ -24,6 +24,8 @@
 				echo $msg; 
 				} 
 			?>
+			</div>
+			<div class="row">
 			<div class="card-deck">
 			    <?php
 			    	foreach ($products as $product) {
