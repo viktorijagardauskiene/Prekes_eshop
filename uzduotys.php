@@ -2,6 +2,22 @@
 <pre>
 <?php
 
+
+
+$a = date_create("2017-07-12");
+$b = date_create("2017-12-25");
+echo date_diff($a, $b)->format("%R%a days")."<br />";
+
+// date("z", mktime(0, 0, 0, 9, 1, 2017)) + 1 rodo kokie bus metu diena ta diena
+// date("z") + 1 rodo kokia metu diena yra dabar (skaiciuoja nuo nulio todel ++)
+// atemus gautusi kiek liko dienu iki tos datos
+
+
+
+
+
+
+/*
 function format_nr($a) {
 print_r(explode(" ", $a));
 $b = explode(" ", $a);
@@ -22,7 +38,7 @@ echo $b[0]." ".$b[1]." ".$b[2];
 
 echo format_nr("+370 6AA BBBB");
 
-/*
+
 $a = [
 	['name'=> 'Delfi', 'url' => 'http://delfi.lt'],
 	['name' => '15min', 'url' => 'http://15min.lt'],
