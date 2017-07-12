@@ -3,7 +3,20 @@
 <?php
 
 
+namu darbai: phonebook lentele id, name, prefix, number
+sugeneruoti visus galimus kauno telefono numeriu, kodas 37, naudojam for cikla kad sugeneruotu numerius ir random vardus, $sql uzklausa kad idetu i duomenu baze, prisijungti prie duomenu bazes
 
+for ciklas kuriame iterpiam i sql; 
+
+// paskaiciuoti ar masyve yra tuscias elementas
+
+$a = [1, 2, 3, null, 5, 4, 6];
+
+//array_search funkcija
+
+
+
+/*
 $a = date_create("2017-07-12");
 $b = date_create("2017-12-25");
 echo date_diff($a, $b)->format("%R%a days")."<br />";
@@ -17,7 +30,7 @@ echo date_diff($a, $b)->format("%R%a days")."<br />";
 
 
 
-/*
+
 function format_nr($a) {
 print_r(explode(" ", $a));
 $b = explode(" ", $a);
