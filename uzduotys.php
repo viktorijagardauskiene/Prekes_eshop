@@ -2,6 +2,25 @@
 <pre>
 <?php
 
+function format_nr($a) {
+print_r(explode(" ", $a));
+$b = explode(" ", $a);
+
+if ($b[0] == "+370") {
+$b[0] = "8"; 
+echo "Numeris yra lietuviskas ";
+} else {
+	echo "Numeris yra nelietuviskas ";
+}
+
+
+echo $b[0]." ".$b[1]." ".$b[2];
+
+}
+
+echo format_nr("+370 6AA BBBB");
+
+/*
 $a = [
 	['name'=> 'Delfi', 'url' => 'http://delfi.lt'],
 	['name' => '15min', 'url' => 'http://15min.lt'],
@@ -20,7 +39,7 @@ foreach ($a as $link) {
 
 
 
-/* $b = ["zole", "pienas", "karve"];
+ $b = ["zole", "pienas", "karve"];
 $a=[5, 8, 4, 6, 3, 1];
 $c = "orangutangas";
 $x = 3;
