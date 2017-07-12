@@ -13,6 +13,8 @@ echo "Numeris yra lietuviskas ";
 	echo "Numeris yra nelietuviskas ";
 }
 
+$c = ["Salis1" => "123", "Salis2" => "321", "Salis3" => "654"];
+$d = (array_search($b[0], $c)); // reikia kad parasytu kurios salies kodas yra
 
 echo $b[0]." ".$b[1]." ".$b[2];
 
