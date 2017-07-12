@@ -7,6 +7,17 @@ $c = "orangutangas";
 $x = 3;
 
 
+
+function plotas($r) {
+	$s = pi()*$r*$r;
+	return $s;
+}
+$s = plotas(2);
+
+
+
+
+/*
  if (array_search($x, $a)) {
  	echo "Yra";
  } else {
@@ -24,7 +35,7 @@ if ($position_in_array != false) {
 }
 
 
-/* //$d = 1;
+ //$d = 1;
 //if(isset($d)) {
 //	unset($d);
 //	echo($d);
