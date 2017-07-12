@@ -1,13 +1,23 @@
 
 <pre>
 <?php
-$b = ["zole", "pienas", "karve"];
+/* $b = ["zole", "pienas", "karve"];
 $a=[5, 8, 4, 6, 3, 1];
 $c = "orangutangas";
 $x = 3;
+*/
+
+function trap_plotas($a, $b, $h) {
+$s = (($a+$b)/2)*$h;
+return $s;
+}
+
+$s = trap_plotas(2, 4, 3);
+
+echo $s;
 
 
-
+/*
 function plotas($r) {
 	$s = pi()*$r*$r;
 	return $s;
@@ -17,7 +27,7 @@ $s = plotas(2);
 
 
 
-/*
+
  if (array_search($x, $a)) {
  	echo "Yra";
  } else {
