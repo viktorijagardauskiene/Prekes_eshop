@@ -1,11 +1,29 @@
 
 <pre>
 <?php
+
+$a = [
+	['name'=> 'Delfi', 'url' => 'http://delfi.lt'],
+	['name' => '15min', 'url' => 'http://15min.lt'],
+	['name' => 'CodeAcademy', 'url' => 'http://codeacademy.lt']
+];
+
+function print_links($a) {
+
+foreach ($a as $link) {
+
+	echo '<a href="'.$link['url'].'">'.$link['name'].'</a><br />';
+	
+}
+}
+
+
+
+
 /* $b = ["zole", "pienas", "karve"];
 $a=[5, 8, 4, 6, 3, 1];
 $c = "orangutangas";
 $x = 3;
-*/
 
 function get_pallet_count($aikstes_plotas, $trinkeliu_kiekis_paleteje, $trinkeles_a, $trinkeles_d) {
 	$tr_s = $trinkeles_d*$trinkeles_a;
@@ -18,7 +36,7 @@ function get_pallet_count($aikstes_plotas, $trinkeliu_kiekis_paleteje, $trinkele
 $kiekis = get_pallet_count(5000, 500, 0.3, 0.2);
 echo $kiekis;
 
-/*
+
 function trap_plotas($a, $b, $h) {
 $s = (($a+$b)/2)*$h;
 return $s;
